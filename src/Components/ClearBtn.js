@@ -1,7 +1,8 @@
 import React from "react";
+import "../Stylesheets/ClearBtn.css"
 
 const ClearBtn = (props) => (
-    <div>
+    <div className="clear-button">
         {props.children}
     </div>
 );
