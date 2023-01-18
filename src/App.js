@@ -14,7 +14,14 @@ function App() {
   };
 
   const calculateResult = () => {
-    setInput(evaluate(input));
+    if(!isNaN(input)) return;
+    
+    try {
+      setInput(evaluate(input));
+    }
+    catch {
+      setInput('Error');
+    }
   };
 
   return (
